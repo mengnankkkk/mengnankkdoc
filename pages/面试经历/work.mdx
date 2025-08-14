@@ -1,0 +1,129 @@
+---
+title: 面试面经
+categories:
+  - 面经
+abbrlink: 2708
+date: 2025.6.30
+tags: 
+   - 面试
+
+---
+
+
+
+## 6.30宁波某小厂
+
+40min腾讯会议，项目是外卖和MyDB
+
+1.问的学业情况，课程情况，到岗情况
+
+2.悲观锁和乐观锁
+
+CAS and AQS
+
+3.java常用的集合,List/Map
+
+Arraylist,LinkedList HashMap,线程安全
+
+4.常用集合来做什么，具体的应用
+
+HashMap去重
+
+5.MVCC的实现原理
+
+read view,当前读 快照读 事务id
+
+6.双token的应用和设计
+
+token refreshtoken
+
+7.了解若依平台吗？只知道是个啥。。。。
+
+8.项目中并发的场景
+
+行级锁，updata语句
+
+9.索引是啥，索引失效的情况。
+
+聚簇，联合，非聚簇，覆盖索引
+
+最左前缀原则，or 函数 运算 范围查询 联合索引没覆盖 索引跳跃 模糊匹配
+
+数据类型不匹配
+
+进行了大量更新，没更新索引和没更新alayls
+
+10.mybits和mybits-plus的比较，复杂查询不用mybits-plus
+
+11.还有一个xxx缓存啥的，我都没听清他说话，就直接说没听过了。
+
+12.乐观锁的实现
+
+Atomic原子类，时间戳，版本号
+
+13.问用没用过python，答会用点，会点简单的爬虫
+
+14.最近在学什么技术
+
+15.反问业务，工资等等
+
+16.线程池怎么使用
+
+线程池参数，流程，使用场景
+
+## 8.12  上海某小厂
+
+1.自我介绍
+
+2.redis的数据类型，加上实际的应用场景
+
+3.sql查topk（limit不行）
+
+1.limit
+
+2.使用rank函数，`RANK()`函数会为每一行数据计算一个排名，相同数值的记录排名相同，下一个排名会跳过相应的名次。
+
+3.子查询和`UNION ALL`来实现
+
+```
+SELECT *
+FROM student_scores
+WHERE score IN (SELECT score FROM student_scores ORDER BY score DESC LIMIT k)
+ORDER BY score DESC
+LIMIT k;
+
+```
+
+4.java中的值传递和引用传递（忘了）
+
+- **值传递**：方法接收的是实参值的拷贝，会创建副本。
+- **引用传递**：方法接收的直接是实参所引用的对象在堆中的地址，不会创建副本，对形参的修改将影响到实参。
+
+5.反问，答的都忘差不多了，直接给我结束了
+
+尴尬了，好久没面试都忘差不多了，哭，但是竟然过了，上海120一天，肯定不去的啊
+
+## 8.14济南某20人AI小厂
+
+1.开源贡献
+
+2.什么是MCP？
+
+3.聊天持久化是怎么实现的
+
+4.SpringAIalibaba里面的秒级搜索是怎么实现的
+
+5.方法重写和方法重载
+
+6.ConcurrentHashmap
+
+7.RAG模式流程
+
+8.了不了解python，相关的AI框架，Python库，FastAPI
+
+9.Docker拉取镜像，启动项目，数据集
+
+10.Git开发的流程
+
+
+
